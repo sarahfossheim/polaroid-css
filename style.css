@@ -152,6 +152,7 @@ body {
 
 .camera .top {
   display: block;
+  position: relative;
   width: 540px;
   height: 320px;
   margin-left: auto;
@@ -164,4 +165,59 @@ body {
     rgba(243,243,243,0.75)
   ), 
   linear-gradient(#DDD9DA, #E2DEDF, #EAE8EB, #F3F1F4);
+}
+
+.camera .top .lens {
+  position: absolute;
+  display: block;
+  width: 210px;
+  height: 210px;
+  border-radius: 105px;
+  background-color: black;
+  top: 15px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  
+  background-image: radial-gradient(transparent, #000000),
+    radial-gradient(rgba(51,53,54,0.4), transparent),
+    radial-gradient(
+      #2A282B 0% 27%, /* dark body 4 */
+      #070508 27.5% 28%, /* dark shadow 4 */
+      #4E4C4F 28.5% 28.6%, /* highlight 3 */
+      #2A282B 28.7% 29.3%, /* dark body 3 */
+      #070508 29.5% 29.8%, /* dark shadow 3 */
+      #4E4C4F 30% 30.5%, /* highlight 2 */
+      #2A282B 30.5% 32.5%, /* dark body 2 */
+      #070508 33% 33.5%, /* dark shadow 2 */
+      #4E4C4F 34% 34.5%, /* highlight 1 */
+      #2A282B 34.5% 36.5%, /* dark body 1 */
+      #070508 37% 37.5%, /* dark shadow 1 */
+      #3D3B40 38% 38.5%, /* shadow 8 */
+      #908E91 39% 39.5%, /* highlight 8 */
+      #3D3B40 40% 40.5%, /* shadow 7 */
+      #908E91 41% 41.5%, /* highlight 7 */
+      #3D3B40 42% 42.5%, /* shadow 6 */
+      #908E91 43% 43.5%, /* highlight 6 */
+      #3D3B40 44% 44.5%, /* shadow 5 */
+      #908E91 45% 45.5%, /* highlight 5 */
+      #3D3B40 46% 46.5%, /* shadow 4 */
+      #908E91 47% 47.5%, /* highlight 4 */
+      #3D3B40 48% 48.5%, /* shadow 3 */
+      #908E91 49% 49.5%, /* highlight 3 */
+      #3D3B40 50% 50.5%, /* shadow 2 */
+      #908E91 51% 51.5%, /* highlight 2 */
+      #3D3B40 52% 52.5%, /* shadow 1 */
+      #908E91 53% 54%, /* highlight 1 */
+      #241E1E 54.5% 57%, /* outer */
+      #131114 57% 59%, /* shadow */
+      #3C3A3D 59% 60%, /* highlight */
+      #241E1E 60% /* outer */
+    );
+  
+  background-size: 350px 350px, 350px 350px, 100%;
+  background-position: bottom -100px left, top -120px right 10px,  center center;
+  background-repeat: no-repeat;
+  box-shadow: 15px 55px 60px 5px #767072;
 }

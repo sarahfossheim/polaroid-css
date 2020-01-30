@@ -47,6 +47,8 @@ body {
     top left,
     bottom left, 
     bottom left;
+  box-shadow: -1px 3px 2px 0px rgba(249,247,248, 0.65) inset;
+
 }
 
 .camera .bottom .printer {
@@ -164,7 +166,11 @@ body {
     rgba(243,243,243,0) 15% 85%,
     rgba(243,243,243,0.75)
   ), 
+  linear-gradient(#FEFEFE, #F9F7F8),
   linear-gradient(#DDD9DA, #E2DEDF, #EAE8EB, #F3F1F4);
+  background-size: 100%, 100% 3px, 100%;
+  background-repeat: no-repeat;
+  box-shadow: -1px 1px 2px 3px rgba(249,247,248, 0.85) inset;
 }
 
 .camera .top .lens {

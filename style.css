@@ -14,7 +14,7 @@ body {
   height: 470px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   position: relative;
 }
 
@@ -25,11 +25,28 @@ body {
   position: absolute;
   bottom: 0;
   border-radius: 11px 11px 30px 30px;
-  background-image: linear-gradient(90deg, #85817E, rgba(47,43,43,0) 5% 95%,  #696461), linear-gradient(#4E4A49, #100C0D),
+  background-image: radial-gradient(#E1DFE2 60%, transparent 60%),
+    radial-gradient(#E1DFE2 60%, transparent 60%),
+    linear-gradient(90deg, #E1DFE2, #EAE8EB),
+    linear-gradient(90deg, #EAE8EB, #E1DFE2),
+    linear-gradient(90deg, #85817E, rgba(47,43,43,0) 5% 95%,  #696461), 
+    linear-gradient(#4E4A49, #100C0D),
     linear-gradient(#312F32, #2A2A27, #363233);
-  background-size: 100% 100%, 100% 20px;
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom left, bottom left;
+  background-size: 50px 60px,
+    50px 60px,
+    185px 30px,
+    185px 30px,
+    100% 100%,
+    100% 20px,
+    100% 100%;
+  background-repeat: no-repeat;
+  background-position: 160px -26px,
+    360px -26px,
+    top right,
+    top left,
+    top left,
+    bottom left, 
+    bottom left;
 }
 
 .camera .bottom .printer {
@@ -55,6 +72,7 @@ body {
   width: 40px;
   height: 46px;
   position: absolute;
+  top: 100px;
   left: 80px;
   background-image: linear-gradient(
     #1D160F 5%, /* Black*/
@@ -67,6 +85,83 @@ body {
     #FE8204 55% 68%, /* Orange */
     #292313 68% 80%, /* Black */
     #E02D28 80% /* Red */
-
   );
+}
+
+.camera .bottom .labels .logo {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #CDCCC8;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.camera .bottom .toggle-container {
+  display: block;
+  width: 135px;
+  height: 35px;
+  background-color: red;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 10px 10px;
+  background-image: radial-gradient(#353334, #4C4849 40%, transparent 70%),
+    radial-gradient(#29272A, #464445 40%, transparent 70%),
+    linear-gradient(#8B8786 10%, #5E5A5B 20% 65%, #969291);
+  background-size: 70px 70px, 70px 70px, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top -25px left -40px, top -15px right -35px, top right;
+}
+
+.camera .bottom .toggle-container .toggle {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 20px;
+  top: 6px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    #747371 2%,
+    #525055 2%,
+    #565152,
+    #535250
+  );
+  border: 0.5px solid #141011;
+}
+
+.camera .bottom .toggle-container .toggle .handle {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  top: -2px;
+  background-color: red;
+  background-image: radial-gradient(#525051, #4B4746);
+  border-radius: 10px;
+  border: 0.5px solid rgba(133, 129, 128, 0.15);
+  box-shadow: -1px 5px 5px #181619;
+}
+
+.camera .top {
+  display: block;
+  width: 540px;
+  height: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 35px 35px 0 0;
+  background-image: linear-gradient(
+    90deg,
+    rgba(243,243,243,0.75),
+    rgba(243,243,243,0) 15% 85%,
+    rgba(243,243,243,0.75)
+  ), 
+  linear-gradient(#DDD9DA, #E2DEDF, #EAE8EB, #F3F1F4);
 }

@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.camera {
+  display: block;
+  width: 570px;
+  height: 470px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  position: relative;
+}
+
+.camera .bottom {
+  display: block;
+  width: 100%;
+  height: 165px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 11px 11px 30px 30px;
+  background-image: linear-gradient(90deg, #85817E, rgba(47,43,43,0) 5% 95%,  #696461), linear-gradient(#4E4A49, #100C0D),
+    linear-gradient(#312F32, #2A2A27, #363233);
+  background-size: 100% 100%, 100% 20px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, bottom left;
+}
+
+.camera .bottom .printer {
+  display: block;
+  width: 470px;
+  height: 40px;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  border-radius: 3px;
+  
+  background-image: linear-gradient(90deg, #474548 90%, #343233 90%),
+    linear-gradient(90deg, #0E090D 10%, #4A4849 10%),
+    linear-gradient(#4C4A4D 4%, #161214 9% 20%, #484445 30% 55%, #1A1617 80% 93%, #B0AFAD 99%);
+  background-size: 8px 100%, 8px 100%, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top left, top right;
+}
+
+.camera .bottom .labels .rainbow {
+  display: block;
+  width: 40px;
+  height: 46px;
+  position: absolute;
+  left: 80px;
+  background-image: linear-gradient(
+    #1D160F 5%, /* Black*/
+    #0E9EE0 5% 14%, /* Blue */
+    #1F211A 14% 19%, /* Black */
+    #0EAE4F 19% 32%, /* Green */
+    #2B2106 32% 37%, /* Black */
+    #FFB404 37% 50%, /* Yellow */
+    #2A1303 50% 55%, /* Black */
+    #FE8204 55% 68%, /* Orange */
+    #292313 68% 80%, /* Black */
+    #E02D28 80% /* Red */
+
+  );
+}

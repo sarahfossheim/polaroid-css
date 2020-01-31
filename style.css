@@ -227,3 +227,39 @@ body {
   background-repeat: no-repeat;
   box-shadow: 15px 55px 60px 5px #767072;
 }
+
+.camera .top .lens .glass {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  position: absolute;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 70px;
+  background-image: radial-gradient(
+      rgba(119, 109, 80, 0.75),
+      transparent 40%
+    ),
+    radial-gradient(
+      rgba(51,180,105,0.2) 13%, 
+      rgba(119,159,59,0.15) 53% 70%,
+      rgba(119,159,59,0) 68%
+    ),
+    radial-gradient(
+      rgba(51,180,105,0.2) 23%, 
+      rgba(51,180,105,0.15) 53% 70%,
+      rgba(51,180,105,0) 68%
+    ),
+    radial-gradient(
+      #2C1F28,
+      #241921 55%,
+      #080609 70%
+    );
+  background-size: 100%, 190% 100%, 190% 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center -10px, -30px -48px, -30px 55px, center;
+}

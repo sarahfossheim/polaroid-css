@@ -6,6 +6,7 @@
 
 body {
   background-color: lightblue;
+  background-image: radial-gradient(#9CDCE0, #9CD4E0);
 }
 
 .camera {
@@ -15,6 +16,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
+  margin-top: calc(50vh - 235px);
   position: relative;
 }
 

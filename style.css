@@ -373,12 +373,57 @@ body {
 
 .camera .top .viewfinder {
   position: absolute;
-  background-color: black;
+  background-color: #1B1A18;
   width: 110px;
   height: 110px;
   border-radius: 20px;
   right: 20px;
   top: 20px;
+  box-shadow: 0.5px 0.5px 1px 1.5px #F1EDEE,
+    1.5px 1px 1px 1px #3B3535 inset,
+    2px 2px 1px 1px #9F9E9C inset,
+    -0.5px -2px 1.5px #9B9A98 inset,
+    1px 1.5px 0.5px 1px #FBF7F8;
+}
+
+.camera .top .viewfinder .glass {
+  position: absolute;
+  background-color: white;
+  width: 75px;
+  height: 75px;
+  left: 18px;
+  top: 18px;
+  border-radius: 20px;
+  background-image: radial-gradient(rgba(236, 234, 237, 0.3) 50%, transparent 60%),
+    radial-gradient(rgba(193, 189, 186, 0.3) 50%, transparent 60%),
+    radial-gradient(#5B5758 45%, #302C2D, #131112);
+  background-size: 106% 32%, 106% 25%, 100%;
+  background-repeat: no-repeat;
+  background-position: -3px -7px, bottom -8px left -3px, center;
+  box-shadow: 0px 0px 1px 0px #010000 inset,
+    0 0 1px 1px #393836 inset,
+    0 0 2px 2px #010000 inset,
+    0 0 2px 4px #393836 inset,
+    0 0 1.5px 4.5px #010000 inset,
+    -0.5px -1px 1px #5F5E5C,
+    0.25px 2px 2px #464543;
+}
+
+
+.camera .top .viewfinder .glass .back {
+  position: absolute;
+  background-image: linear-gradient(#ECEAED, #E2E0E1);
+  width: 40px;
+  height: 40px;
+  left: 18px;
+  top: 19px;
+  border-radius: 10px;
+  box-shadow: 0.5px 2px 2px 0 #5E5B56,
+    0px 1px 3px 0px #CAC4C5,
+    -4px 0px 5px 0px rgba(9,7,5,0.75),
+    1px 1px 1px 1px #F1ECF0 inset,
+    1.5px 1.5px 1px 1px #D1D0CE inset;
+  border: 0.5px solid rgba(9,7,5,0.75);
 }
 
 .camera .top .timer {

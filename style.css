@@ -281,12 +281,94 @@ body {
 
 .camera .top .flash {
   position: absolute;
-  background-color: black;
   width: 90px;
   height: 160px;
   border-radius: 15px;
   left: 25px;
   top: 25px;
+  box-shadow: -1px -1px 1px #BDB8B5,
+    -1.5px -2.1px 0.5px #24201D,
+    -4px 4px 3px 3px #F4F0EF,
+    -5px 8px 8px #ABA6AA,
+    0.25px 1px 1px 5px #3E3A38 inset,
+    0 -6px 1px 1px #F6F6F8 inset;
+  background-image: linear-gradient(#EDECEA,#F6F6F8),
+    linear-gradient(
+      90deg,
+      rgba(247,246,244,0) 3% /*transparent*/,
+      rgba(247,246,244,0.5) 3% 6% /*white*/,
+      rgba(247,246,244,0) 6% 11% /*transparent*/,
+      rgba(247,246,244,0.5) 12% 15% /*white*/,
+      rgba(247,246,244,0) 15% 21% /*transparent*/,
+      rgba(247,246,244,0.5) 21% 23% /*white*/,
+      rgba(247,246,244,0) 23% 24% /*transparent*/,
+      rgba(247,246,244,0.5) 24% 25% /*white*/,
+      rgba(247,246,244,0) 25% 27% /*transparent*/,
+      rgba(247,246,244,0.5) 27% 28% /*white*/,
+      rgba(247,246,244,0) 28% 31% /*transparent*/,
+      rgba(247,246,244,0.5) 31% 33% /*white*/,
+      rgba(247,246,244,0) 33% 35% /*transparent*/,
+      rgba(247,246,244,0.5) 35% 37% /*white*/,
+      rgba(247,246,244,0) 37% 39% /*transparent*/,
+      rgba(247,246,244,0.5) 39% 41% /*white*/,
+      rgba(247,246,244,0) 41% 43% /*transparent*/,
+      rgba(247,246,244,0.5) 43% 45% /*white*/,
+      rgba(247,246,244,0) 45% 48% /*transparent*/,
+      rgba(247,246,244,0.5) 48% 50% /*white*/,
+      rgba(247,246,244,0) 50% 55% /*transparent*/,
+      rgba(247,246,244,0.5) 55% 57% /*white*/,
+      rgba(247,246,244,0) 57% 59% /*transparent*/,
+      rgba(247,246,244,0.5) 59% 60% /*white*/,
+      rgba(247,246,244,0) 60% 61% /*transparent*/,
+      rgba(247,246,244,0.5) 61% 62% /*white*/,
+      rgba(247,246,244,0) 62% 64% /*transparent*/,
+      rgba(247,246,244,0.5) 64% 66% /*white*/,
+      rgba(247,246,244,0) 66% 69% /*transparent*/,
+      rgba(247,246,244,0.5) 69% 71% /*white*/,
+      rgba(247,246,244,0) 71% 75% /*transparent*/,
+      rgba(247,246,244,0.5) 75% 77% /*white*/,
+      rgba(247,246,244,0) 77% 79% /*transparent*/,
+      rgba(247,246,244,0.5) 79% 80% /*white*/,
+      rgba(247,246,244,0) 80% 81% /*transparent*/,
+      rgba(247,246,244,0.5) 81% 82% /*white*/,
+      rgba(247,246,244,0) 82% 84% /*transparent*/,
+      rgba(247,246,244,0.5) 84% 86% /*white*/,
+      rgba(247,246,244,0) 86% 89% /*transparent*/,
+      rgba(247,246,244,0.5) 89% 91% /*white*/,
+      rgba(247,246,244,0) 81% 95% /*transparent*/
+    ),
+    linear-gradient(
+      90deg,
+      rgba(186,184,185,0.1),
+      rgba(247,246,244,0.65),
+      rgba(186,184,185,0.1)
+    ),
+    linear-gradient(
+      90deg,
+      rgba(186,184,185,0.1),
+      rgba(247,246,244,0.65),
+      rgba(186,184,185,0.1)
+    ),
+    linear-gradient(
+      #E3DEDA 15%,
+      #AFAAA6 25% 35%,
+      transparent 45%
+    ),
+    linear-gradient(
+      #F0EFED 10%,
+      #B0ABA7 20%,
+      #403C3B 40%,
+      #2F2B2A 43%,
+      #292524 45% 55%,
+      #696562 65% 75%,
+      #C2BFBA 82% 86%,
+      #DEDAD7 90% 93%, 
+      #C9C6C1 94% 96%,
+      #FFFEFA 98%),
+    linear-gradient(#34332F, #3E3A38);
+  background-size: 42px 20px, 42px 100%, 3px 100%, 3px 100%, 100% 3px, 100%, 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat, repeat, no-repeat;
+  background-position: 24px top, 25px top, 22px top, 64px top, center, center, center;
 }
 
 .camera .top .viewfinder {

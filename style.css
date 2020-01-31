@@ -430,17 +430,17 @@ body {
 
 .camera .top .toggle-container {
   position: absolute;
-  background-color: orange;
   width: 50px;
   height: 22px;
   border-radius: 20px;
   right: 50px;
   top: 145px;
+  background-image: linear-gradient(#CC7B00 10%, #B26701);
+  box-shadow: 0.2px 0.2px 0.5px 0.5px #935723 inset, 0.5px 1px 0.75px 0.25px #FCE9D8;
 }
 
 .camera .top .toggle-container .toggle{
   position: absolute;
-  background-color: yellow;
   width: 20px;
   height: 20px;
   border-radius: 20px;
@@ -448,5 +448,7 @@ body {
   left: 0;
   margin-left: auto;
   margin-right: auto;
-  top: 1.5px;
+  top: 1px;
+  background-image: radial-gradient(#FBC00A, #FFDB09);
+  box-shadow: 0.5px 1px 0.75px 0.25px #FFED71 inset, 0px -0.5px 0.5px 0.5px #E6A11F inset, -1px 0.5px 4px 1px #964900;
 }

@@ -6,6 +6,7 @@
 
 body {
   background-color: lightblue;
+  background-image: radial-gradient(#9CDCE0, #9CD4E0);
 }
 
 .camera {

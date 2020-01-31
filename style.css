@@ -395,22 +395,37 @@ body {
 
 .camera .top .sensor {
   position: absolute;
-  background-color: black;
   width: 23px;
   height: 23px;
   border-radius: 20px;
   left: 135px;
   top: 70px;
+  background-image: radial-gradient(#080607, transparent 50%),
+    radial-gradient(#0B090A, #211F20, #131112, #383637, #100E0F, #383637, #100E0F);
+  backround-size: 60%, 100%;
+  background-position: -6px -3px, center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0.5px 1px 0.75px #FFFBFC, 0 -1px 1px #635F5E;
 }
 
 .camera .top .power {
   position: absolute;
-  background-color: black;
   width: 28px;
   height: 28px;
   border-radius: 20px;
   right: 150px;
   top: 195px;
+  background-image: radial-gradient(
+    #000000 30%,
+    #252525,
+    #171717,
+    #020001,
+    #242223,
+    #383637
+  );
+  box-shadow: 0px 0.5px 1px 0.75px #C6C1C0,
+    0px -0.5px 0.5px 0.25px #1A1819,
+    -5px -8px 8px 1px rgba(86,82,82,0.4);
 }
 
 .camera .top .toggle-container {
